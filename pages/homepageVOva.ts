@@ -6,7 +6,7 @@ export class HomePage {
         this.titleMessage = page.locator('div[class="logo-label"]')
 
     }
-    expectedMessage(ourMessage: string): void {
-        expect(this.titleMessage).toHaveText(ourMessage)
+    async expectedMessage(ourMessage: string): Promise<void> {
+      await  expect(this.titleMessage).toHaveText(ourMessage)
     }
 }
