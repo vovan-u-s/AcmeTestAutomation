@@ -3,7 +3,7 @@ export class HomePage {
 
     titleMessage: Locator;
     constructor(page: Page) {
-        this.titleMessage = page.locator('h6[id="time"]')
+        this.titleMessage = page.locator('div[class="logo-label"]')
 
     }
     expectedMessage(ourMessage: string): void {

@@ -6,7 +6,7 @@ export class LoginTestPage {
     constructor(page: Page) {
         this.userName = page.locator('input[id="username"]')
         this.password = page.locator('input[id="password"]')
-        this.signInButton = page.locator('a[id="log-in"]]')
+        this.signInButton = page.locator('a[id="log-in"]')
 
     }
     async loginTest(userName: string, password: string): Promise<void> {

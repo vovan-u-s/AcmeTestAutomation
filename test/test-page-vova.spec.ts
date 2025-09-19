@@ -6,5 +6,5 @@ test('homepage title test', async ({ page }) => {
     await page.goto('https://demo.applitools.com/')
     await newLoginTest.loginTest('wqrqwer', 'fdgdfg')
     let newHomePage = new HomePage(page)
-    newHomePage.expectedMessage('Your nearest branch closes in: 30m 5s')
+    newHomePage.expectedMessage('ACME')
 })
